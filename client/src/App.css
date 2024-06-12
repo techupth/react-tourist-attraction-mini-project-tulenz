@@ -1,0 +1,63 @@
+.places-list {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  margin-top: 20px;
+}
+
+.header {
+  color: rgb(0, 110, 255);
+  font-size: 50px;
+  text-align: center;
+}
+
+.input {
+  text-align: center;
+}
+
+.text {
+  text-align: center;
+  width: 1000px;
+  box-shadow: 0px 2px gray;
+  padding: 5px;
+  border: none;
+}
+
+.place-item {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  flex-direction: row;
+}
+
+.place-item img {
+  width: 20%;
+  border-radius: 10px;
+}
+
+.place-item h2 {
+  font-size: 1.5em;
+  margin: 10px 0;
+}
+
+.place-item p {
+  margin: 10px 0;
+}
+
+.place-item a {
+  color: blue;
+  text-decoration: underline;
+}
+
+.tags {
+  margin-top: 10px;
+}
+
+.tag {
+  display: inline-block;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  padding: 5px 10px;
+  margin-right: 5px;
+  font-size: 0.9em;
+}
