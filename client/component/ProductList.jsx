@@ -36,16 +36,26 @@ function Productlist() {
       <div className="places-list">
         {places.map((place) => (
           <div className="place-item" key={place.id}>
-            <img src={place.photos[0]} />
-            <h2>{place.title}</h2>
-            <p>{place.description.substring(0, 100)}...</p>
-            <a href={place.url}>อ่านต่อ</a>
-            <div className="tags">
-              {place.tags.map((tag, index) => (
-                <span key={index} className="tag">
-                  {tag}
-                </span>
-              ))}
+            <img className="photo1" src={place.photos[0]} />
+            <div className="photo3">
+              {place.photos.map(
+                (photo, index) =>
+                  index > 0 && (
+                    <img key={index} src={photo} className="place-photo" />
+                  )
+              )}
+            </div>
+            <div className="text-box">
+              <h2>{place.title}</h2>
+              <p>{place.description.substring(0, 100)}...</p>
+              <a href={place.url}>อ่านต่อ</a>
+              <div className="tags">
+                {place.tags.map((tag, index) => (
+                  <span key={index} className="tag">
+                    {tag}
+                  </span>
+                ))}
+              </div>
             </div>
           </div>
         ))}

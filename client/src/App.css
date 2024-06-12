@@ -28,11 +28,33 @@
   border-radius: 10px;
   padding: 20px;
   flex-direction: row;
+  display: flex;
+  height: 300px;
 }
 
-.place-item img {
+.photo1 {
   width: 20%;
+  border-radius: 20px;
+}
+
+.place-photo {
+  width: 100px; /* ปรับขนาดตามต้องการ */
+  height: 100px; /* ปรับขนาดตามต้องการ */
+  margin-right: 10px; /* ระยะห่างระหว่างรูปภาพ */
+  margin-bottom: 10px; /* ระยะห่างระหว่างรูปภาพ */
   border-radius: 10px;
+}
+
+.photo3 {
+  width: 400px;
+  display: flex;
+  align-items: end;
+  margin-left: 2%;
+}
+
+.text-box {
+  position: absolute;
+  left: 23%;
 }
 
 .place-item h2 {
